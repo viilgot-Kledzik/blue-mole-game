@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body class="bg-yellow-300">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl text-center text-blue-500 my-4">Whack-a-Mole</h1>
+        <div class="score-board text-center text-2xl mb-4">Score: <span id="score">0</span></div>
+        <div id="game-board" class="grid grid-cols-3 gap-4">
+            <!-- Mole holes will be generated here -->
+        </div>
+        <button id="startBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Start</button>
+        <button id="resetBtn" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 ml-4">Reset</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
